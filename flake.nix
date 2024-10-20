@@ -38,6 +38,11 @@
         specialArgs = {inherit inputs outputs;};
         modules = [./machines/vm/configuration.nix];
       };
+
+      desktop = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [./machines/desktop/configuration.nix];
+      };
     };
   };
 }

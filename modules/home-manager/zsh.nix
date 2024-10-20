@@ -6,9 +6,10 @@
     syntaxHighlighting.enable = true;
   };
 
-  programs.oh-my-posh = {
+  programs.starship = {
     enable = true;
-    useTheme = "atomic";
-    enableBashIntegration = true;
+    settings = {
+      add_newline = false;
+    };
   };
 }
